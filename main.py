@@ -19,8 +19,8 @@ async def log_requests(request: Request, call_next):
     response = await call_next(request)
     return response
 
-GITHUB_TOKEN = "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"
-USERNAME = "Ggowthampatnaik"
+GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
+USERNAME = os.getenv("USERNAME")
 
 class LandingPage(BaseModel):
     repo_name: str
