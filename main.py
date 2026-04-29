@@ -19,7 +19,7 @@ async def log_requests(request: Request, call_next):
     response = await call_next(request)
     return response
 
-GITHUB_TOKEN = "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"
+GITHUB_TOKEN = "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"
 USERNAME = "Ggowthampatnaik"
 
 class LandingPage(BaseModel):
